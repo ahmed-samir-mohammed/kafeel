@@ -1,0 +1,36 @@
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: $txtColor;
+            border-radius: .25rem;
+            padding: .8rem;
+            margin-left: .25rem;
+            .img {
+                display: inline-block;
+                svg {
+                    path {
+                        fill: $txtColor;
+                    }
+                }
+            }
+            &.active {
+                color: $grenColor;
+                background-color: rgb(29 191 115 / 15%);
+                svg {
+                    path {
+                        fill: $grenColor;
+                    }
+                }
+            }
+            &:hover {
+                color: $grenColor;
+                background-color: rgb(29 191 115 / 15%);
+                svg {
+                    path {
+                        fill: $grenColor;
+                    }
+                }
+            }
+        }
+    }
+}

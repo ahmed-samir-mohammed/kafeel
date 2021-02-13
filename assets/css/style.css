@@ -1,0 +1,40 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #707070;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  margin-left: 0.25rem;
+}
+.navbar-light .navbar-nav .nav-link .img {
+  display: inline-block;
+}
+.navbar-light .navbar-nav .nav-link .img svg path {
+  fill: #707070;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #1DBF73;
+  background-color: rgba(29, 191, 115, 0.15);
+}
+.navbar-light .navbar-nav .nav-link.active svg path {
+  fill: #1DBF73;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1DBF73;
+  background-color: rgba(29, 191, 115, 0.15);
+}
+.navbar-light .navbar-nav .nav-link:hover svg path {
+  fill: #1DBF73;
+}
+
+body {
+  font-family: "JannaLT-Regular";
+}
+
+@font-face {
+  font-family: "Janna LT";
+  src: url("../font/dee436f274c410c23fc3de43367ef1ae.eot");
+  /* IE9*/
+  src: url("../font/dee436f274c410c23fc3de43367ef1ae.eot?#iefix") format("embedded-opentype"), url("../font/dee436f274c410c23fc3de43367ef1ae.woff2") format("woff2"), url("../font/dee436f274c410c23fc3de43367ef1ae.woff") format("woff"), url("../font/dee436f274c410c23fc3de43367ef1ae.ttf") format("truetype"), url("../font/dee436f274c410c23fc3de43367ef1ae.svg#Janna LT") format("svg");
+  /* iOS 4.1- */
+}
+
+/*# sourceMappingURL=style.css.map */
