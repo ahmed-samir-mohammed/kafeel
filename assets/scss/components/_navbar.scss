@@ -1,33 +1,93 @@
 .navbar-light {
-    .navbar-nav {
-        .nav-link {
+    background-color: #fff !important;
+    .navbar-brand {
+        width: 3.125rem;
+        // height: 50px;
+    }
+    form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .form-control {
+            background-color: #EFEFEF;
             color: $txtColor;
-            border-radius: .25rem;
-            padding: .8rem;
-            margin-left: .25rem;
-            .img {
-                display: inline-block;
-                svg {
-                    path {
-                        fill: $txtColor;
+            border: 1px solid rgba($color: $txtColor, $alpha: .25);
+            border-radius: 10rem;
+            padding-right: 2.5rem;
+            &::placeholder {
+                color: $txtColor;
+            }
+        }
+        img {
+            position: absolute;
+            right: .7rem;
+
+
+        }
+    }
+    .collapse {
+        .navbar-nav {
+            &:first-of-type {
+                padding: 0 2rem;
+                border-left: 1px solid rgba($color: $txtColor, $alpha: .25);
+                border-right: 1px solid rgba($color: $txtColor, $alpha: .25);
+                .nav-link {
+                    color: $txtColor;
+                    border-radius: .25rem;
+                    padding: .8rem;
+                    margin-left: .25rem;
+                    .img {
+                        display: inline-block;
+                        svg {
+                            path {
+                                fill: $txtColor;
+                            }
+                        }
+                    }
+                    &.active {
+                        color: $grenColor;
+                        background-color: rgb(29 191 115 / 15%);
+                        svg {
+                            path {
+                                fill: $grenColor;
+                            }
+                        }
+                    }
+                    &:hover {
+                        color: $grenColor;
+                        background-color: rgb(29 191 115 / 15%);
+                        svg {
+                            path {
+                                fill: $grenColor;
+                            }
+                        }
                     }
                 }
             }
-            &.active {
-                color: $grenColor;
-                background-color: rgb(29 191 115 / 15%);
-                svg {
-                    path {
-                        fill: $grenColor;
+            &.icons {
+                .nav-item {
+                    .nav-link {
+                        background-color: rgba($color: $txtColor, $alpha: .15);
+                        border-radius: 50%;
+                        width: 2.375rem;
+                        height: 2.375rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 .45rem;
+                        img {
+                            width: 1rem;
+                        }
                     }
-                }
-            }
-            &:hover {
-                color: $grenColor;
-                background-color: rgb(29 191 115 / 15%);
-                svg {
-                    path {
-                        fill: $grenColor;
+                    &.user {
+                        .nav-link {
+                            background-color: #fff;
+                            border: 2px solid $grenColor;
+                            img {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
                     }
                 }
             }

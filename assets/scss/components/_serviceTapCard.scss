@@ -1,0 +1,50 @@
+.service__tapcard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #DEE0E1;
+    border-radius: .25rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    .nav {
+        &-link {
+            height: 100%;
+            border-radius: 0;
+            background-color: #F8F8F8;
+            color: $txtColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #DEE0E1;
+            // &:last-of-type {
+            //     border-left: 0;
+            // }
+            &.active {
+                background-color: #fff;
+                border-top: 2px solid $grenColor;
+                color: $grenColor;
+            }
+        }
+    }
+
+    &--icons {
+        display: flex;
+        padding: .4rem;
+        align-items: center;
+        &--like, &--more {
+            background-color: #F6F6F6;
+            padding: .3rem;
+            border-radius: .2rem;
+        }
+        &--like {
+            margin-left: .5rem;
+        }
+
+        &--more {
+            img {
+                transform: rotateZ(90deg);
+            }
+        }
+    }
+}

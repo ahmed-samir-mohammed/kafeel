@@ -8,7 +8,8 @@
 @import './components/_components';
 
 body {
-    font-family: $fontFamily
+    font-family: $fontFamily;
+    background-color: $bakcColor;
 }
 
 @font-face {
